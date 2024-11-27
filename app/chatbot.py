@@ -2,7 +2,6 @@ import os
 import openai
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
-openai.api_key = openai_api_key
 
 
 def ask_chatbot(question: str, context: str = "You are a helpful assistant.") -> str:
