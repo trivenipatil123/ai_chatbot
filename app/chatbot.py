@@ -1,8 +1,6 @@
 import os
 import openai
 
-openai_api_key = os.getenv("OPENAI_API_KEY")
-
 
 def ask_chatbot(question: str, context: str = "You are a helpful assistant.") -> str:
     if not openai.api_key:
